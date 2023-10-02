@@ -104,7 +104,7 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  let accum = new Array();
+  const accum = new Array();
   for (let i = 0; i < numbers.length; i++) {
     if ((numbers[i] % 2) === 0) {
       accum.push(numbers[i]);
@@ -118,7 +118,7 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  let accum = new Array();
+  const accum = new Array();
   for (let i = 0; i < numbers.length; i++) {
     if ((numbers[i] % 2) !== 0) {
       accum.push(numbers[i]);

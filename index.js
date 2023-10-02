@@ -57,7 +57,8 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  let accum = getSum(numbers) / getLength(numbers);
+  return accum;
 }
 
 /**
@@ -65,7 +66,14 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  let currentLow = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    console.log("current = " +  currentLow + "; checking = " + numbers[i]) ;
+    if(numbers[i] < currentLow) {
+      currentLow = numbers[i];
+    }
+  }
+  return currentLow;
 }
 
 /**

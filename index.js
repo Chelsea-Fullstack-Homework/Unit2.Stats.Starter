@@ -68,7 +68,7 @@ function getMean(numbers) {
 function getMin(numbers) {
   let currentLow = numbers[0];
   for (let i = 1; i < numbers.length; i++) {
-    console.log("current = " +  currentLow + "; checking = " + numbers[i]) ;
+    // console.log("current = " +  currentLow + "; checking = " + numbers[i]) ;
     if(numbers[i] < currentLow) {
       currentLow = numbers[i];
     }
@@ -81,7 +81,15 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  let currentHigh = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    // console.log("current = " +  currentHigh + "; checking = " + numbers[i]) ;
+    if(numbers[i] > currentHigh) {
+      currentHigh = numbers[i];
+    }
+  }
+  return currentHigh;
+
 }
 
 /**

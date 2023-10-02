@@ -106,7 +106,7 @@ function getRange(numbers) {
 function getEvens(numbers) {
   let accum = new Array();
   for (let i = 0; i < numbers.length; i++) {
-    if ((numbers[i] % 2) == 0) {
+    if ((numbers[i] % 2) === 0) {
       accum.push(numbers[i]);
     }
   }
@@ -118,5 +118,11 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  let accum = new Array();
+  for (let i = 0; i < numbers.length; i++) {
+    if ((numbers[i] % 2) !== 0) {
+      accum.push(numbers[i]);
+    }
+  }
+  return accum;
 }
